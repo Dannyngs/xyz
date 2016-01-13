@@ -27,21 +27,21 @@ var Wata = {
     currencySwitcher: {
         offers: {
             standard: {
-                usd: 19.0,
-                eur: 17.0
+                hkd: '18,000',
+                rmb: '15,300'
             },
             professional: {
-                usd: 49.0,
-                eur: 43.0
+                hkd: '28,000',
+                rmb: '23,800'
             },
             extended: {
-                usd: 99.0,
-                eur: 87.0
+                hkd: '8,000',
+                rmb: '6,800'
             }
         },
         symbols: {
-            usd: '$',
-            eur: '€'
+            hkd: '$',
+            rmb: '￥'
         }
     },
 

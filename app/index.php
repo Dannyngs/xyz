@@ -57,7 +57,7 @@ require_once 'init.php';
                 <div class="nav-wrapper">
 
                     <!-- Site name -->
-                    <a href="/" class="brand-logo"><strong class="tighter">Λ </strong>p p t i s a n</a>
+                    <a href="/" class="brand-logo"><strong class="tighter"> </strong>Λ p p t i s a n</a>
 
                     <!-- Mobile menu button -->
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -131,16 +131,16 @@ require_once 'init.php';
                 <!-- Row with service icons -->
                 <div class="row services">
                     <div class="col s12 l3">
-                        <i class="fa fa-5x fa-paint-brush animated-color"></i>
+                        <i class="fa fa-5x fa-desktop animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Design</h5>
-                        <p>Inspired by the latest trends of Material design, using cutting-edge technologies for a fresh and modern look. More design, all the time</p>
+                        <h5>Web-based App</h5>
+                        <p>We combine the latest  technologies to provide our customers wide range of web applications development and maintenance services.</p>
                         <a class="btn waves-effect waves-dark white black-text">Learn more</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-mobile animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Apps</h5>
+                        <h5>Mobile Apps</h5>
                         <p>Our experienced and talented team of Mobile Apps developers is always willing to work on latest mobile technologies to give you the best</p>
                         <a class="btn waves-effect waves-dark white black-text">Discover</a>
                     </div>
@@ -184,7 +184,7 @@ require_once 'init.php';
                 <div id="shuffle-grid" class="row">
                     
                     <?php foreach($works as $wk) {?>
-                    <a href="list.php?id=<?php echo $wk['id']?>" class="col s12 m6 l4 picture-item ajax-link" data-groups='["<?php echo $wk['type']?>"]'>
+                    <a href="list.php?id=<?php echo $wk['id']?>" class="col s12 m6 l2 picture-item ajax-link" data-groups='["<?php echo $wk['type']?>"]'>
                         <img src="upload/<?php echo $wk['image']?>" class="responsive-img" alt="Ice cream">
                         <h5><?php echo $wk['title']?></h5>
                     </a>
@@ -213,7 +213,7 @@ require_once 'init.php';
             </div>
         </div>
 
-        <!-- About section -->
+        <!--
         <div class="section scrollspy" id="about">
             <div class="container">
                 <div class="row">
@@ -327,7 +327,8 @@ require_once 'init.php';
         <div class="container">
             <div class="divider"></div>
         </div>
-
+ About section -->
+        
         <!-- Prices section -->
         <div class="section scrollspy" id="prices">
             <div class="container">
@@ -344,12 +345,12 @@ require_once 'init.php';
                         <p class="right-align currency-switcher">
                             Choose your currency:
                             <span class="currency-group">
-                                <input name="currency" type="radio" id="usd" checked>
-                                <label for="usd">$</label>
+                                <input name="currency" type="radio" id="hkd" checked>
+                                <label for="hkd">HKD</label>
                             </span>
                             <span class="currency-group">
-                                <input name="currency" type="radio" id="eur">
-                                <label for="eur">€</label>
+                                <input name="currency" type="radio" id="rmb">
+                                <label for="rmb">RMB</label>
                             </span>
                         </p>
                     </div>
@@ -357,9 +358,9 @@ require_once 'init.php';
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="standard">
-                            <div class="offer">Standard Apps</div>
+                            <div class="offer">Web App</div>
                             <div class="divider"></div>
-                            <div class="price">$48,000<span></span></div>
+                            <div class="price">$18,000<span></span></div>
                             <ul>
                                 <li>Mobile support</li>
                                 <li>Site optimization</li>
@@ -372,7 +373,7 @@ require_once 'init.php';
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1 best-offer" id="professional">
-                            <div class="offer best-value">Hybrid Apps</div>
+                            <div class="offer best-value">Mobile App</div>
                             <div class="divider"></div>
                             <div class="price">$28,000</div>
                             <ul>
@@ -388,7 +389,7 @@ require_once 'init.php';
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="extended">
-                            <div class="offer">Web Sites/Apps</div>
+                            <div class="offer">Website</div>
                             <div class="divider"></div>
                             <div class="price">$8,000</div>
                             <ul>

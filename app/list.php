@@ -1,5 +1,10 @@
 
+<?php 
+  require_once 'init.php';
 
+$rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
+  $work = $rs->fetch();
+?>
 <div id="ajax-status">
     <div class="preloader-wrapper large active">
         <div class="spinner-layer spinner-blue-only actually-green">
@@ -20,73 +25,50 @@
     <i class="mdi-navigation-close indigo-text text-darken-4"></i>
 </a>
 
-<div class="parallax-container" id="hero">
-    <div class="parallax"><img src="upload/w3.png" alt="Tape"></div>
-</div>
+	    
 
 <div class="container">
     <div class="row">
-        <div class="col s12 m10 offset-m1">
-            <h1>
-                1Old fashioned<?php echo $_GET['id']; ?>
+         <h1>
+               <?php echo $work['title'];  ?>
             </h1>
-            <p class="flow-text grey lighten-4 padding-text">
-                Client: Skrillex<br>
-                Task: we were asked to record a mixtape with some of the nicest electronic tunes on the market. Years
-                1979 and below.
-            </p>
-            <p class="flow-text">
-                His divided, them you&#39;ll God may darkness, which. Deep firmament without called behold which were
-                female. Sixth. Shall morning saw gathering bearing brought creepeth green. Fourth itself. Second Itself
-                yielding fowl make don&#39;t bearing.
-            </p>
-            <p class="flow-text">
-                Seasons Hath open light creature under blessed every lesser morning shall the blessed give beginning. You.
+        <div class="col s12 m9 ">
+           
+          <?php if($work['type']!="website"){;  ?> 
+    <!-- iphone -->        
+    <div class="marvel-device iphone6 gold" style="margin:0p auto;">
+    <div class="top-bar"></div>
+    <div class="sleep"></div>
+    <div class="volume"></div>
+    <div class="camera"></div>
+    <div class="sensor"></div>
+    <div class="speaker"></div>
+    <div class="screen" style="z-index:99;">
+     <iframe width="100%" height="100%" scrolling="no" src=" <?php echo $work['demo'];  ?>">
+</iframe>
+    </div>
+    <div class="home"></div>
+    <div class="bottom-bar"></div>
+</div>
+      <?php }else {  ?> 
+
+            <!-- desktio -->
+            <div class="browser-mockup with-tab" style="height:750px;">
+   <iframe width="100%" height="100%" scrolling="yes" src=" <?php echo $work['demo'];  ?>">
+</div>
+            <?php }  ?>  
+           
+          
+        </div>
+        <div class="col s12 m3 ">
+          <p class="flow-text grey lighten-4 padding-text">
+                AppID: #  <?php echo $work['appid'];  ?><br>
+                Written in :  <?php echo $work['lang'];  ?><br>
+                Build With : <?php echo $work['tech'];  ?><br>
+                Template By :  <?php echo $work['template'];  ?>  from Envato<br>
             </p>
         </div>
     </div>
 </div>
 
-<div class="wide-container">
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50713119&amp;color=69f0ae&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col s12 m10 offset-m1">
-            <h3>Tracklist</h3>
-            <ol class="flow-text">
-                <li>Glamour Manifesto &mdash; Apes on Fire</li>
-                <li>Pimenton &mdash; Smoking Eyjafjallajökull</li>
-                <li>Fort Minor &mdash; Welcome</li>
-                <li>Geskia &mdash; Ghost Coast</li>
-                <li>Vök &mdash; Waterfall</li>
-                <li>Jamie xx &mdash; Gosh</li>
-                <li>Emika &mdash; Battles</li>
-                <li>Noisia &mdash; Incessant</li>
-                <li>Aphex Twin &mdash; Nanou2</li>
-                <li>deadmau5 &mdash; Gula</li>
-            </ol>
-            <h3>About software</h3>
-            <p class="flow-text">
-                Bearing face greater i under very creeping gathered whose for lesser make. Form whales creature.
-                Without night fruitful give open divided man cattle created lesser face.
-            </p>
-            <div class="divider"></div>
-        </div>
-        <div class="col s12 m5 offset-m1">
-            <p class="flow-text">
-                <a href="#">Listen on SoundCloud <i class="fa fa-soundcloud"></i></a>
-            </p>
-        </div>
-        <div class="col s12 m5">
-            <p class="flow-text right-on-med-and-up social">
-                Share:
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-            </p>
-        </div>
-    </div>
-</div>
 

@@ -45,7 +45,9 @@
        <link rel="stylesheet" href="_/libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="_/libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="_/styles/css/wata.min.css">
- 
+     <link rel="stylesheet" href="_/styles/css/devices.min.css">
+     <link rel="stylesheet" href="_/styles/css/browser.css">
+
      <!-- endbuild -->
     
    <!-- build:css({.tmp,app}) /_/css/site-styles.css -->
