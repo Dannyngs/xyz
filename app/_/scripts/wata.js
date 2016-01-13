@@ -237,8 +237,11 @@ $(document).ready(function() {
         $('.team .col:in-viewport(' + tolerance + ')').addClass('animate');
         $('.masonry .card:in-viewport(' + tolerance + ')').addClass('animate');
     });
+      
+    start();
     
-     dissmissPreloader();
+    dissmissPreloader();
+
 });
 
 var ScrollAnimations = function() {

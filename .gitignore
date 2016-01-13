@@ -2,3 +2,8 @@
 .tmp
 node_modules
 app/_/bower_components
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

@@ -1,0 +1,11 @@
+branch-defaults:
+  master:
+    environment: Apptisanxyz-dev
+    group_suffix: null
+global:
+  application_name: Apptisan.xyz
+  default_ec2_keyname: null
+  default_platform: PHP 5.5
+  default_region: ap-southeast-1
+  profile: eb-cli
+  sc: git

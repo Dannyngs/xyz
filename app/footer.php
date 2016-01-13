@@ -16,8 +16,8 @@
         <script src="_/libs/masonry/dist/masonry.pkgd.min.js"></script>
         <script src="_/libs/ajaxchimp/jquery.ajaxchimp.min.js"></script>
         <script src="_/libs/isinviewport/isInViewport.min.js"></script>
-        <script src="_/scripts/wata.js"></script>
         <script src="_/scripts/starfield.js"></script>
+        <script src="_/scripts/wata.js"></script>
 
 
 

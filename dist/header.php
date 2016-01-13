@@ -41,27 +41,15 @@
     <!-- Web app manifest file -->
     <link rel="manifest" href="favicons/manifest.json">
 
-     <!-- build:css({.tmp,app}) /_/css/lib/html5bp.css -->
-       <link rel="stylesheet" href="_/libs/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="_/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_/styles/css/wata.min.css">
- 
-     <!-- endbuild -->
+     <link rel="stylesheet" href="/_/css/lib/html5bp.css"/>
     
-   <!-- build:css({.tmp,app}) /_/css/site-styles.css -->
-        
-      
-       
-
-        <!-- endbuild -->
+   <link rel="stylesheet" href="/_/css/site-styles.css"/>
     
     <!-- Favicons -->
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     
-     <!-- build:js /_/js/lib/modernizr/modernizr.js -->
-        <script src="/_/bower_components/modernizr/dist/js/modernizr.js"></script>
-        <!-- endbuild -->
+     <script src="/_/js/lib/modernizr/modernizr.js"></script>
     <!--[if lt IE 9 ]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <![endif]-->
@@ -74,4 +62,4 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<body  onresize="resize()" onorientationchange="resize()"  >
+<body onload="start()" onresize="resize()" onorientationchange="resize()" >
