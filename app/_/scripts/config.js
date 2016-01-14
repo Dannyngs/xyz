@@ -27,12 +27,12 @@ var Wata = {
     currencySwitcher: {
         offers: {
             standard: {
-                hkd: '18,000',
-                rmb: '15,300'
-            },
-            professional: {
                 hkd: '28,000',
                 rmb: '23,800'
+            },
+            professional: {
+                hkd: '18,000',
+                rmb: '15,300'
             },
             extended: {
                 hkd: '8,000',

@@ -62,6 +62,8 @@ $(document).ready(function() {
     });
 
     (function() {
+            $('select').material_select();
+
         var contactForm = $('form#contact-form'),
             contactFormFields = contactForm.find('input, textarea'),
             submitButton = contactForm.find('button[type=submit]'),

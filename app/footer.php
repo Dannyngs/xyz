@@ -18,6 +18,7 @@
         <script src="_/libs/isinviewport/isInViewport.min.js"></script>
         <script src="_/scripts/starfield.js"></script>
         <script src="_/scripts/wata.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
 
 

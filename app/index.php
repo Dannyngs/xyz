@@ -69,8 +69,7 @@ require_once 'init.php';
                         <li><a href="#works">Works</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#prices">Prices</a></li>
-                        <li><a href="#subscribe">Subscribe</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                      
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
@@ -173,8 +172,10 @@ require_once 'init.php';
                     <h2>Our works</h2>
                     <!-- Category filter buttons -->
                     <div class="filter-options">
+                        
                         <a class="btn-flat waves-green-accent waves-effect active" id="all" data-group="all">Everything</a>
-                        <a class="btn-flat waves-green-accent waves-effect" data-group="app">App</a>
+                                                <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid">Hybrid App</a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="app">Native App</a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="website">Website</a>
                     </div>
                 </div>
@@ -336,7 +337,7 @@ require_once 'init.php';
                     <h2>Prices</h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
-                            Browse between a standard, professional and extended bundle versions.
+                            Browse between native app, hybrid app and website(web app) versions.
                             We've got your next project covered.
                         </p>
                     </div>
@@ -350,7 +351,7 @@ require_once 'init.php';
                             </span>
                             <span class="currency-group">
                                 <input name="currency" type="radio" id="rmb">
-                                <label for="rmb">RMB</label>
+                                <label for="rmb">CNY</label>
                             </span>
                         </p>
                     </div>
@@ -358,57 +359,65 @@ require_once 'init.php';
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="standard">
-                            <div class="offer">Web App</div>
+                            <div class="offer">NATIVE App</div>
                             <div class="divider"></div>
-                            <div class="price">$18,000<span></span></div>
+                            <div class="price">$28,000<span></span></div>
                             <ul>
-                                <li>Mobile support</li>
-                                <li>Site optimization</li>
-                                <li>SEO setup</li>
-                                <li>Subscribers</li>
-                                <li>Support tickets</li>
+                                <li>Graphic Design</li>
+                                <li>User Experience Design</li>
+                                <li>Native App Development (IOS/Android)</li>
+                                <li>Server-side Development (Node.js/Php/Parse)</li>
+                                <li>One-Year Hosting (AWS Beanstalk)</li>
+                                 <li>Admin Tutorial (Phone)</li>
+                                <li>Technical Support (Email/Phone)</li>
+                                <li>  * You can always scale out your server performance <br>
+                                  by adding AWS Auto Scaling </li>
                             </ul>
-                            <a class="waves-effect waves-dark white black-text btn">Choose</a>
+                            <a class="waves-effect waves-dark white black-text btn">Learn more</a>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1 best-offer" id="professional">
-                            <div class="offer best-value">Mobile App</div>
+                            <div class="offer best-value">HYBRID App</div>
                             <div class="divider"></div>
-                            <div class="price">$28,000</div>
+                            <div class="price">$18,000</div>
                             <ul>
-                                <li>Ios & Android support</li>
-                                <li>Cordova Based</li>
-                                <li>SEO setup</li>
-                                <li>Subscribers</li>
-                                <li>PHP integration</li>
-                                <li>Unlimited support</li>
+                                 <li>Graphic Design</li>
+                                <li>User Experience Design</li>
+                                <li>Hybrid App Development (Cordova/Phonegap + Angular.js)</li>
+                                <li>Server-side Development (Node.js/Php/Parse)</li>
+                                <li>One-Year Hosting (AWS Beanstalk + RDS)</li>
+                                 <li>Admin Tutorial (Phone)</li>
+                                <li>Technical Support (Email/Phone)</li>
+                              <li>  * You can always scale out your server performance <br>
+                                  by adding AWS Auto Scaling </li>
+
                             </ul>
-                            <a class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn">Choose</a>
+
+                            <a class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn">Learn more</a>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="extended">
-                            <div class="offer">Website</div>
+                            <div class="offer">Website(web app)</div>
                             <div class="divider"></div>
                             <div class="price">$8,000</div>
                             <ul>
-                                <li>Mobile support</li>
-                                <li>Site optimization</li>
-                                <li>SEO setup</li>
-                                <li>MailChimp Subscribers</li>
-                                <li>WebGL effects</li>
-                                <li>PHP integration</li>
-                                <li>Unlimited support</li>
+                               <li>Graphic Design</li>
+                                <li>User Experience Design</li>
+                                <li>Website Development (Node.js / Php)</li>
+                                <li>One-Year Hosting (AWS Beanstalk + RDS)</li>
+                                <li>Admin Tutorial (Phone)</li>
+                                <li>Technical Support (Email/Phone)</li>
                             </ul>
-                            <a class="waves-effect waves-dark white black-text btn">Choose</a>
+                            <a class="waves-effect waves-dark white black-text btn">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Subscribe section -->
+        <!-- 
         <div class="section grey-section scrollspy" id="subscribe">
             <div class="container">
                 <div class="row">
@@ -423,13 +432,13 @@ require_once 'init.php';
                 </div>
                 <div class="row">
                     <div class="col s8 offset-s2">
-                        <!-- Begin MailChimp Signup Form -->
+                       
                         <div id="mc_embed_signup">
                             <form action="//pimmey.us11.list-manage.com/subscribe/post?u=4131d254e34d85ebd3ba25ad3&amp;id=302b5221bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                                 <div id="mc_embed_signup_scroll" class="input-field">
                                     <label for="mce-EMAIL">Your email</label>
                                     <input type="email" name="EMAIL" class="email" id="mce-EMAIL" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                   
                                     <div class="cant-touch-this">
                                         <input type="text" name="b_4131d254e34d85ebd3ba25ad3_302b5221bd" tabindex="-1" value="">
                                     </div>
@@ -441,13 +450,13 @@ require_once 'init.php';
                                 </div>
                             </form>
                         </div>
-                        <!--End mc_embed_signup-->
+                       
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Blog section -->
+Subscribe section -->
+        <!-- 
         <div class="section scrollspy" id="blog">
             <div class="container">
                 <div class="row">
@@ -589,7 +598,7 @@ require_once 'init.php';
         <div class="container">
             <div class="divider"></div>
         </div>
-
+Blog section -->
         <!-- Contact form section -->
         <div class="section scrollspy" id="contact">
             <div class="container">
@@ -601,7 +610,7 @@ require_once 'init.php';
                             always glad to receive your messages.
                         </p>
                         <p class="right-align">
-                            <i class="fa fa-info-circle"></i> Last name is not required.
+                         <!--   <i class="fa fa-info-circle"></i> Last name is not required.-->
                         </p>
                     </div>
                 </div>
@@ -609,35 +618,39 @@ require_once 'init.php';
                     <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
                         <!-- This field helps us avoid spam bots, don't remove it -->
                         <div class="cant-touch-this">
+                            
                             <input type="text" name="hammertime" tabindex="-1" value="">
                         </div>
                         <!-- End of anti-spam field -->
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="first-name" name="first-name" type="text" class="required">
-                                <label for="first-name">First name</label>
+                                
+                                <input id="name" name="name" type="text" class="required">
+                                <label for="name">Name</label>
                             </div>
-                            <div class="input-field col s6">
-                                <input id="last-name" name="last-name" type="text">
-                                <label for="last-name">Last name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
+                           <div class="input-field col s6">
                                 <input id="email" name="email" type="email" class="required">
                                 <label for="email">Email</label>
                             </div>
-                        </div>
-                        <div class="row">we
-                            <div class="input-field col s12">
-                                <select>
-                                <option>asdasd</option>
-                                                                    <option>asdasd</option>
-                                <option>asdasd</option>
-
-                                </select>
+                        
+                        <div class="row">
+                             <div class="input-field col s12 m6">
+                                
+                                <input id="tel" name="tel" type="text" class="required">
+                                <label for="tel">Tel</label>
                             </div>
-                        </div>
+                        <div class="input-field col s12 m6">
+                            <select >
+                              <option value="1">Hybrid Mobile App</option>
+                              <option value="2">Native Mobile App</option>
+                              <option value="3">Website</option>
+                              <option value="3">Web App / Web-based Business System</option>
+                            </select>
+                            <label>Select Service</label>
+                          </div>
+                            </div>
+                            
+                            
                         <div class="row">
                             <div class="input-field col s12">
                                 <textarea id="message" name="message" class="materialize-textarea required"></textarea>
@@ -649,6 +662,10 @@ require_once 'init.php';
                                 Send
                             </button>
                         </div>
+                        
+                        
+                        
+                        
                     </form>
                 </div>
             </div>
@@ -675,8 +692,8 @@ require_once 'init.php';
                         <h5>Reach us</h5>
                         <div class="divider"></div>
                         <p>
-                            +1-800-41-23-09<br>
-                            <a href="mailto:hello@wata.com">hello@wata.com</a>
+                            +852 2222 2222<br>
+                            <a href="mailto:hi@apptisan.xyz">hi@apptisan.xyz</a>
                         </p>
                     </div>
                     <div class="col s12 m6 l4 modern-connect">
@@ -684,9 +701,8 @@ require_once 'init.php';
                         <div class="divider"></div>
                         <p>
                             <!-- Add your Skype link here -->
-                            <a href="skype:wata?chat"><i class="fa fa-skype"></i> wata.skype</a><br>
-                            <i class="fa fa-whatsapp"></i> wata.whatsapp<br>
-                            <i class="fa fa-wechat"></i> wata.wechat
+                            <i class="fa fa-whatsapp"></i> apptisan<br>
+                            <i class="fa fa-wechat"></i> apptisan
                         </p>
                     </div>
                 </div>
