@@ -226,7 +226,7 @@ $(document).ready(function() {
         }
     })();
 
-    initializeMap();
+//initializeMap();
 
     $('.activator, .card-title').on('click', function() {
         $(this).parents('.card').toggleClass('active');
@@ -242,6 +242,8 @@ $(document).ready(function() {
       
     start();
 
+   $('#triangles').css('height',document.documentElement.clientHeight)
+   
     dissmissPreloader();
 
 });

@@ -3,7 +3,7 @@
   require_once 'init.php';
 
 $rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
-  $work = $rs->fetch();
+  $work = $rs->fetch();echo "asaassa";
 ?>
 <div id="ajax-status">
     <div class="preloader-wrapper large active">

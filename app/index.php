@@ -88,10 +88,10 @@ require_once 'init.php';
         </div>
 
         <!-- Triangles section -->
-        <div id="triangles" style="height:817px;" class="scrollspy">
-            <div id="output">
-                 <canvas id="starfield" width="1920" height="9996" style="position: absolute;"></canvas>
-                <div class="h1-wrapper valign-wrapper">
+        <div id="triangles" >
+                 <canvas id="starfield" ></canvas>
+
+            <div class="h1-wrapper valign-wrapper">
                     <div class="container">
                         <div class="row">
                             <div class="col s12">
@@ -110,8 +110,6 @@ require_once 'init.php';
 
 
 
-
-            </div>
 
         </div>
 
@@ -166,15 +164,15 @@ require_once 'init.php';
         </div>
 
         <!-- Works section -->
-        <div class="section scrollspy" id="works">
-            <div class="container">
+        <div class="section scrollspy"id="works" >
+            <div class="container" >
                 <div class="row">
                     <h2>Our works</h2>
                     <!-- Category filter buttons -->
-                    <div class="filter-options">
+                    <div class="filter-options" >
                         
                         <a class="btn-flat waves-green-accent waves-effect active" id="all" data-group="all">Everything</a>
-                                                <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid">Hybrid App</a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid">Hybrid App</a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="app">Native App</a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="website">Website</a>
                     </div>
@@ -633,14 +631,15 @@ Blog section -->
                                 <label for="email">Email</label>
                             </div>
                         
-                        <div class="row">
+                        
                              <div class="input-field col s12 m6">
                                 
                                 <input id="tel" name="tel" type="text" class="required">
                                 <label for="tel">Tel</label>
                             </div>
                         <div class="input-field col s12 m6">
-                            <select >
+                            <select multiple>
+                              <option value="" disabled selected>Choose your option</option>
                               <option value="1">Hybrid Mobile App</option>
                               <option value="2">Native Mobile App</option>
                               <option value="3">Website</option>
@@ -648,15 +647,15 @@ Blog section -->
                             </select>
                             <label>Select Service</label>
                           </div>
-                            </div>
                             
                             
-                        <div class="row">
+                            
+                    
                             <div class="input-field col s12">
                                 <textarea id="message" name="message" class="materialize-textarea required"></textarea>
                                 <label for="message">Message</label>
                             </div>
-                        </div>
+                       
                         <div class="center-align">
                             <button type="submit" name="send" class="btn-large disabled">
                                 Send
@@ -673,30 +672,30 @@ Blog section -->
                 <div class="row">
                     <div class="col s12">
                         <!-- Google map container -->
-                        <div id="map-canvas" class="map"></div>
+                       
                     </div>
                 </div>
             </div>
             <div class="container contact-details">
                 <div class="row">
-                    <div class="col s12 m6 l4">
-                        <h5>Headquarters</h5>
+                    <div class="col s12 m4 l4">
+                        <h5>Payment Method</h5>
                         <div class="divider"></div>
-                        <address>
-                            12 W 1st St<br>
-                            90001 Los Angeles<br>
-                            California<br>
-                        </address>
+                        <p>
+                             <i class="fa fa-cc-paypal"></i>  Paypal<br>
+                            <i class="fa fa-credit-card"></i> Credit Card</a>
+                        </p>
                     </div>
-                    <div class="col s12 m6 l4">
+                   
+                    <div class="col s12 m4 l4">
                         <h5>Reach us</h5>
                         <div class="divider"></div>
                         <p>
-                            +852 2222 2222<br>
-                            <a href="mailto:hi@apptisan.xyz">hi@apptisan.xyz</a>
+                             <i class="fa fa-phone"></i>  6016 0849<br>
+                            <i class="fa fa-envelope"></i> <a href="mailto:hi@apptisan.xyz">hi@apptisan.xyz</a>
                         </p>
                     </div>
-                    <div class="col s12 m6 l4 modern-connect">
+                    <div class="col s12 m4 l4 modern-connect">
                         <h5>Modern connect</h5>
                         <div class="divider"></div>
                         <p>
@@ -713,9 +712,9 @@ Blog section -->
         <footer class="page-footer">
             <div class="footer-copyright">
                 <div class="container">
-                    © 2015 Wata | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
+                    © 2016 Apptisan Team . All rights reserved.<a href="ajax/pages/privacy-policy.html" class="ajax-link"> </a>
 
-                    <!-- Social icons -->
+                    <!-- Social
                     <span class="social right">
                         <a href="#!"><i class="fa fa-facebook"></i></a>
                         <a href="#!"><i class="fa fa-vk"></i></a>
@@ -723,6 +722,7 @@ Blog section -->
                         <a href="#!"><i class="fa fa-github"></i></a>
                         <a href="#!"><i class="fa fa-deviantart"></i></a>
                     </span>
+ icons -->
                 </div>
             </div>
         </footer>
