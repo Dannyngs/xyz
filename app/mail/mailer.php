@@ -29,7 +29,7 @@ if ($smtp['enabled']) {
 } else {
     $mail->isHTML(true);
 }
-$mail->SMTPDebug = 4;
+$mail->SMTPDebug = 2;
 $mail->From = $form_data['email'];
 $mail->FromName = $me['name'];
 
