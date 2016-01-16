@@ -43,6 +43,13 @@ $mail->Body = $parsed_template;
 
 $mail->AltBody = $form_data['name'] . " (" . $form_data['email'] . ") used the Apptisan contact form to send you this message: " . $form_data['message'];
 
+
+
+
+
+
+
+
 if ( ! $mail->send())
 {
     echo $mail->ErrorInfo;

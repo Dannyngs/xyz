@@ -9,7 +9,6 @@
 
 
  <script src="_/libs/jquery/jquery-2.1.1.min.js"></script>
-        <script src="_/libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
         <script src="_/libs/imagesloaded/imagesloaded.pkgd.js"></script>
         <script src="_/libs/shufflejs/jquery.shuffle.modernizr.min.js"></script>
         <script src="_/libs/masonry/dist/masonry.pkgd.min.js"></script>

@@ -26,13 +26,13 @@ function trianglesReady() {
 }
 
 $(document).ready(function() {
-    $('.scrollspy').scrollSpy();
+   $('.scrollspy').scrollSpy();
     $('.materialboxed').materialbox();
     $('.button-collapse').sideNav({
         closeOnClick: true
     });
 
-    ScrollAnimations();
+  //  ScrollAnimations();
 
     Shuffle.init();
 
@@ -92,6 +92,8 @@ $(document).ready(function() {
         });
 
         function checkRequired() {
+            
+           
             for (var i = 0; i < requiredFieldsLength; i++) {
                 if (requiredFields[i].value.length === 0) {
                     return false;
@@ -164,7 +166,7 @@ $(document).ready(function() {
             scrollPosition = $(document).scrollTop();
 
             ajaxBox.load($(this).attr('href'), function(resp, status, xhr) {
-                if (status === 'error') {
+               if (status === 'error') {
                     unLoadAjax();
                     Materialize.toast(Wata.toastMessages.somethingWrong + xhr.status + ' ' + xhr.statusText, 5000, 'error');
                     return false;
@@ -227,7 +229,7 @@ $(document).ready(function() {
         $('.masonry .card:in-viewport(' + tolerance + ')').addClass('animate');
     });
       
-    start();
+   start();
 
    $('#triangles').css('height',document.documentElement.clientHeight)
    
@@ -251,7 +253,7 @@ var ScrollAnimations = function() {
             'rgb(43, 58, 211)'
         ];
 
-    var sceneServiceIcons = new ScrollMagic.Scene({triggerElement: '#services', duration: '75%'})
+    var sceneServiceIcons = new ScrollMagic.Scene({triggerElement: '#services', duration: 3000})
         .addTo(controller);
 
     var sceneServiceIconsProgress;

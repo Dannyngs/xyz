@@ -3,7 +3,7 @@
   require_once 'init.php';
 
 $rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
-  $work = $rs->fetch();echo "asaassa";
+ $work = $rs->fetch();
 ?>
 <div id="ajax-status">
     <div class="preloader-wrapper large active">
@@ -32,9 +32,9 @@ $rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
          <h1>
                <?php echo $work['title'];  ?>
             </h1>
-        <div class="col s12 m9 ">
-           
+        
           <?php if($work['type']!="website"){;  ?> 
+        <div class="col s12 m4 offset-m4">  
     <!-- iphone -->        
     <div class="marvel-device iphone6 gold" style="margin:0p auto;">
     <div class="top-bar"></div>
@@ -50,24 +50,31 @@ $rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
     <div class="home"></div>
     <div class="bottom-bar"></div>
 </div>
-      <?php }else {  ?> 
-
-            <!-- desktio -->
+           </div>
+                
+                 <?php }else {  ?> 
+                         <!-- desktop -->
+                <div class="col s12 m8 ">
             <div class="browser-mockup with-tab" style="height:750px;">
-   <iframe width="100%" height="100%" scrolling="yes" src=" <?php echo $work['demo'];  ?>">
+                <iframe width="100%" height="100%" scrolling="yes" src=" <?php echo $work['demo'];  ?>"></iframe>
 </div>
-            <?php }  ?>  
+              </div>
            
+           <?php   }  ?>
           
-        </div>
-        <div class="col s12 m3 ">
+            
+           
+            
+            
+        <div class="col s12 m3">
           <p class="flow-text grey lighten-4 padding-text">
                 AppID: #  <?php echo $work['appid'];  ?><br>
                 Written in :  <?php echo $work['lang'];  ?><br>
                 Build With : <?php echo $work['tech'];  ?><br>
-                Template By :  <?php echo $work['template'];  ?>  from Envato<br>
+                Template By :  <?php echo $work['template'];  ?> <br>
             </p>
         </div>
+                       
     </div>
 </div>
 

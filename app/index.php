@@ -158,7 +158,7 @@ require_once 'init.php';
             </div>
         </div>
 
-        <div class="container">
+        <div class="container ">
             <div class="divider"></div>
         </div>
 
@@ -594,7 +594,7 @@ Blog section -->
                     </div>
                 </div>
                 <div class="row">
-                    <form class="col s12 m12 l8 offset-l2" action="mail/mailer.php" id="contact-form" novalidate>
+                    <form class="col s12 m12 l8 offset-l2" action="form.php" id="contact-form" novalidate>
                         <!-- This field helps us avoid spam bots, don't remove it -->
                         <div class="cant-touch-this">
                             
@@ -681,8 +681,8 @@ Blog section -->
                         <div class="divider"></div>
                         <p>
                             <!-- Add your Skype link here -->
-                            <i class="fa fa-whatsapp"></i> apptisan<br>
-                            <i class="fa fa-wechat"></i> apptisan
+                            <i class="fa fa-whatsapp"></i> 6827 9835<br>
+                            <i class="fa fa-wechat"></i> 178232163
                         </p>
                     </div>
                 </div>
@@ -709,6 +709,7 @@ Blog section -->
         </footer>
 
     </div>
+ </div>
 
     <!-- Ajax box container, waiting for its turn -->
     <div id="ajax-box" class="translate"></div>
