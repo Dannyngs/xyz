@@ -57,7 +57,7 @@ require_once 'init.php';
                 <div class="nav-wrapper">
 
                     <!-- Site name -->
-                    <a href="/" class="brand-logo"><strong class="tighter"> </strong>Λ p p t i s a n</a>
+                    <a href="/" class="brand-logo"><span class="tighter">A </span> p p t i s a n</a>
 
                     <!-- Mobile menu button -->
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -77,9 +77,8 @@ require_once 'init.php';
                         <li><a href="#triangles">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#works">Works</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#prices">Prices</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -330,10 +329,10 @@ require_once 'init.php';
                                 <input name="currency" type="radio" id="hkd" checked>
                                 <label for="hkd">HKD</label>
                             </span>
-                            <span class="currency-group">
+                          <!--   <span class="currency-group">
                                 <input name="currency" type="radio" id="rmb">
                                 <label for="rmb">CNY</label>
-                            </span>
+                            </span>-->
                         </p>
                     </div>
                 </div>
@@ -342,7 +341,7 @@ require_once 'init.php';
                         <div class="price-container z-depth-1" id="standard">
                             <div class="offer">NATIVE App</div>
                             <div class="divider"></div>
-                            <div class="price">$28,000<span></span></div>
+                            <div class="price"><span style="font-size:20px;"> From </span>$28,000</div>
                             <ul>
                                 <li>Graphic Design</li>
                                 <li>User Experience Design</li>
@@ -360,7 +359,7 @@ require_once 'init.php';
                         <div class="price-container z-depth-1 best-offer" id="professional">
                             <div class="offer best-value">HYBRID App</div>
                             <div class="divider"></div>
-                            <div class="price">$18,000</div>
+                            <div class="price"><span style="font-size:20px;"> From </span>$18,000</div>
                             <ul>
                                  <li>Graphic Design</li>
                                 <li>User Experience Design</li>
@@ -380,7 +379,7 @@ require_once 'init.php';
                         <div class="price-container z-depth-1" id="extended">
                             <div class="offer">Website(web app)</div>
                             <div class="divider"></div>
-                            <div class="price">$8,000</div>
+                          <div class="price"><span style="font-size:20px;"> From </span>$8,000</div>
                             <ul>
                                <li>Graphic Design</li>
                                 <li>User Experience Design</li>
