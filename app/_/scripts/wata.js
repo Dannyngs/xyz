@@ -46,21 +46,8 @@ $(document).ready(function() {
         $masonry.masonry('layout');
     });
 
-    var mcForm = $('form#mc-embedded-subscribe-form');
-    mcForm.ajaxChimp({
-        url: $(this).attr('action'),
-        callback: function(resp) {
-            var message = resp.msg,
-                result = resp.result,
-                dissmissTime = result === 'success' ? 10000 : 5000;
-            Materialize.toast(message.replace(/\d - /, ''), dissmissTime, result);
-            if (result === 'success') {
-                mcForm.find('input[type=email]').val('');
-                mcForm.find('label').removeClass('active');
-            }
-        }
-    });
-
+    
+    //inquiry form
     (function() {
             $('select').material_select();
 
@@ -226,7 +213,7 @@ $(document).ready(function() {
         }
     })();
 
-//initializeMap();
+
 
     $('.activator, .card-title').on('click', function() {
         $(this).parents('.card').toggleClass('active');
@@ -382,117 +369,3 @@ var CurrencySwitcher = function() {
     });
 };
 
-function initializeMap() {
-    // Create an array of styles.
-    var styles = [
-        {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#444444"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#f2f2f2"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "saturation": -100
-                },
-                {
-                    "lightness": 45
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#46bcec"
-                },
-                {
-                    "visibility": "on"
-                }
-            ]
-        }
-    ];
-
-    // Create a new StyledMapType object, passing it the array of styles,
-    // as well as the name to be displayed on the map type control.
-    var styledMap = new google.maps.StyledMapType(styles, {
-        name: "Styled Map"
-    });
-
-    var myLatLng = new google.maps.LatLng(Wata.googleMaps.lat, Wata.googleMaps.lng);
-
-    // Create a map object, and include the MapTypeId to add
-    // to the map type control.
-    var mapOptions = {
-        zoom: Wata.googleMaps.zoom,
-        center: myLatLng,
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-        },
-        scrollwheel: false,
-        draggable: false
-    };
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map
-    });
-
-    //Associate the styled map with the MapTypeId and set it to display.
-    map.mapTypes.set('map_style', styledMap);
-    map.setMapTypeId('map_style');
-}

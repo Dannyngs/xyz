@@ -67,7 +67,6 @@ require_once 'init.php';
                         <li><a href="#triangles">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#works">Works</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#prices">Prices</a></li>
                       
                         <li><a href="#contact">Contact</a></li>
@@ -88,7 +87,7 @@ require_once 'init.php';
         </div>
 
         <!-- Triangles section -->
-        <div id="triangles" >
+        <div id="triangles" class="scrollspy">
                  <canvas id="starfield" ></canvas>
 
             <div class="h1-wrapper valign-wrapper">
@@ -132,28 +131,28 @@ require_once 'init.php';
                         <div class="divider"></div>
                         <h5>Web-based App</h5>
                         <p>We combine the latest  technologies to provide our customers wide range of web applications development and maintenance services.</p>
-                        <a class="btn waves-effect waves-dark white black-text">Learn more</a>
+                        <a href="#contact" class="btn waves-effect waves-dark white black-text">Learn more</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-mobile animated-color"></i>
                         <div class="divider"></div>
                         <h5>Mobile Apps</h5>
                         <p>Our experienced and talented team of Mobile Apps developers is always willing to work on latest mobile technologies to give you the best</p>
-                        <a class="btn waves-effect waves-dark white black-text">Discover</a>
+                        <a href="#contact" class="btn waves-effect waves-dark white black-text">Discover</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-cloud animated-color"></i>
                         <div class="divider"></div>
                         <h5>Cloud Hosting</h5>
                         <p>As a trusted partner of AWS Cloud based Solutions, Apptisan provides Amazon web hosting and cloud computing </p>
-                        <a class="btn waves-effect waves-dark white black-text">Try it</a>
+                        <a href="#contact" class="btn waves-effect waves-dark white black-text">Try it</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-code animated-color"></i>
                         <div class="divider"></div>
                         <h5>Website</h5>
                         <p>Your website will be the face of your business. It will reflect the features and the nature of your business from all angles. </p>
-                        <a class="btn waves-effect waves-dark white black-text">Explore</a>
+                        <a href="#contact" class="btn waves-effect waves-dark white black-text">Explore</a>
                     </div>
                 </div>
             </div>
@@ -194,23 +193,7 @@ require_once 'init.php';
         </div>
 
         <!-- Get started section -->
-        <div class="section grey-section" id="get-started">
-            <div class="container">
-                <div class="row">
-                    <h2>Like what you see?</h2>
-                    <div class="col s12 m10 offset-m1 l8 offset-l2">
-                        <p class="flow-text center-align">
-                            Let's start building your next project together. View our bundle <a href="#prices">prices</a> or get started right away.
-                        </p>
-                        <p class="center-align">
-                            <a class="waves-effect waves-light btn-large green accent-2 indigo-text text-darken-4">
-                                <i class="fa fa-rocket left"></i>Get started
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <!--
         <div class="section scrollspy" id="about">
@@ -363,15 +346,14 @@ require_once 'init.php';
                             <ul>
                                 <li>Graphic Design</li>
                                 <li>User Experience Design</li>
-                                <li>Native App Development (IOS/Android)</li>
-                                <li>Server-side Development (Node.js/Php/Parse)</li>
-                                <li>One-Year Hosting (AWS Beanstalk)</li>
-                                 <li>Admin Tutorial (Phone)</li>
-                                <li>Technical Support (Email/Phone)</li>
-                                <li>  * You can always scale out your server performance <br>
-                                  by adding AWS Auto Scaling </li>
+                                <li>Native App Development</li>
+                                <li>Server-side Development </li>
+                                <li>One-Year Hosting </li>
+                                 <li>Admin Tutorial </li>
+                                <li>Technical Support </li>
+                              
                             </ul>
-                            <a class="waves-effect waves-dark white black-text btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-dark white black-text btn">Learn more</a>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -382,17 +364,16 @@ require_once 'init.php';
                             <ul>
                                  <li>Graphic Design</li>
                                 <li>User Experience Design</li>
-                                <li>Hybrid App Development (Cordova/Phonegap + Angular.js)</li>
-                                <li>Server-side Development (Node.js/Php/Parse)</li>
-                                <li>One-Year Hosting (AWS Beanstalk + RDS)</li>
-                                 <li>Admin Tutorial (Phone)</li>
-                                <li>Technical Support (Email/Phone)</li>
-                              <li>  * You can always scale out your server performance <br>
-                                  by adding AWS Auto Scaling </li>
+                                <li>Hybrid App Development </li>
+                                <li>Server-side Development</li>
+                                <li>One-Year Hosting </li>
+                                 <li>Admin Tutorial </li>
+                                <li>Technical Support</li>
+                             
 
                             </ul>
 
-                            <a class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn">Learn more</a>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -403,12 +384,12 @@ require_once 'init.php';
                             <ul>
                                <li>Graphic Design</li>
                                 <li>User Experience Design</li>
-                                <li>Website Development (Node.js / Php)</li>
-                                <li>One-Year Hosting (AWS Beanstalk + RDS)</li>
-                                <li>Admin Tutorial (Phone)</li>
-                                <li>Technical Support (Email/Phone)</li>
+                                <li>Website Development</li>
+                                <li>One-Year Hosting</li>
+                                <li>Admin Tutorial</li>
+                                <li>Technical Support</li>
                             </ul>
-                            <a class="waves-effect waves-dark white black-text btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-dark white black-text btn">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -598,8 +579,8 @@ Subscribe section -->
         </div>
 Blog section -->
         <!-- Contact form section -->
-        <div class="section scrollspy" id="contact">
-            <div class="container">
+        <div class="section scrollspy"id="contact">
+            <div class="container" >
                 <div class="row">
                     <h2>Contact us</h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -613,7 +594,7 @@ Blog section -->
                     </div>
                 </div>
                 <div class="row">
-                    <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
+                    <form class="col s12 m12 l8 offset-l2" action="mail/mailer.php" id="contact-form" novalidate>
                         <!-- This field helps us avoid spam bots, don't remove it -->
                         <div class="cant-touch-this">
                             
@@ -638,12 +619,12 @@ Blog section -->
                                 <label for="tel">Tel</label>
                             </div>
                         <div class="input-field col s12 m6">
-                            <select multiple>
+                            <select multiple id="service" name="service[]">
                               <option value="" disabled selected>Choose your option</option>
-                              <option value="1">Hybrid Mobile App</option>
-                              <option value="2">Native Mobile App</option>
-                              <option value="3">Website</option>
-                              <option value="3">Web App / Web-based Business System</option>
+                              <option value="Hybrid">Hybrid Mobile App</option>
+                              <option value="Native">Native Mobile App</option>
+                              <option value="Website">Website</option>
+                              <option value="Web App">Web App / Web-based Business System</option>
                             </select>
                             <label>Select Service</label>
                           </div>
