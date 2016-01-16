@@ -62,7 +62,6 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     
      <!-- build:js /_/js/lib/modernizr/modernizr.js -->
-        <script src="/_/bower_components/modernizr/dist/js/modernizr.js"></script>
         <!-- endbuild -->
     <!--[if lt IE 9 ]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
