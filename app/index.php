@@ -672,7 +672,7 @@ Blog section -->
                         <h5>Reach us</h5>
                         <div class="divider"></div>
                         <p>
-                             <i class="fa fa-phone"></i>  6016 0849<br>
+                             <i class="fa fa-phone"></i>  6827 9835<br>
                             <i class="fa fa-envelope"></i> <a href="mailto:hi@apptisan.xyz">hi@apptisan.xyz</a>
                         </p>
                     </div>
