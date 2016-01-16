@@ -181,7 +181,12 @@ require_once 'init.php';
                 <!-- Shuffle grid -->
                 <div id="shuffle-grid" class="row">
                     
-                  
+                    <?php foreach($works as $wk) {?>
+                    <a href="list.php?id=<?php echo $wk['id']?>" class="col s12 m6 l2 picture-item ajax-link" data-groups='["<?php echo $wk['type']?>"]'>
+                        <img src="upload/<?php echo $wk['image']?>" class="responsive-img" alt="Ice cream">
+                        <h5><?php echo $wk['title']?></h5>
+                    </a>
+                    <?php }?>
                     
                 </div>
             </div>
