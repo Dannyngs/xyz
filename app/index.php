@@ -68,7 +68,7 @@ require_once 'init.php';
                         <li><a href="#services">Services</a></li>
                         <li><a href="#works">Works</a></li>
                         <li><a href="#prices">Prices</a></li>
-                      
+
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
@@ -78,7 +78,7 @@ require_once 'init.php';
                         <li><a href="#services">Services</a></li>
                         <li><a href="#works">Works</a></li>
                         <li><a href="#prices">Prices</a></li>
-                        
+
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -168,7 +168,7 @@ require_once 'init.php';
                     <h2>Our works</h2>
                     <!-- Category filter buttons -->
                     <div class="filter-options" >
-                        
+
                         <a class="btn-flat waves-green-accent waves-effect active" id="all" data-group="all">Everything</a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid">Hybrid App</a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="app">Native App</a>
@@ -179,20 +179,20 @@ require_once 'init.php';
             <div class="wide-container">
                 <!-- Shuffle grid -->
                 <div id="shuffle-grid" class="row">
-                    
+
                     <?php foreach($works as $wk) {?>
                     <a href="list.php?id=<?php echo $wk['id']?>" class="col s12 m6 l2 picture-item ajax-link" data-groups='["<?php echo $wk['type']?>"]'>
                         <img src="upload/<?php echo $wk['image']?>" class="responsive-img" alt="Ice cream">
                         <h5><?php echo $wk['title']?></h5>
                     </a>
                     <?php }?>
-                    
+
                 </div>
             </div>
         </div>
 
         <!-- Get started section -->
-       
+
 
         <!--
         <div class="section scrollspy" id="about">
@@ -309,7 +309,7 @@ require_once 'init.php';
             <div class="divider"></div>
         </div>
  About section -->
-        
+
         <!-- Prices section -->
         <div class="section scrollspy" id="prices">
             <div class="container">
@@ -350,7 +350,7 @@ require_once 'init.php';
                                 <li>One-Year Hosting </li>
                                  <li>Admin Tutorial </li>
                                 <li>Technical Support </li>
-                              
+
                             </ul>
                             <a href="#contact" class="waves-effect waves-dark white black-text btn">Learn more</a>
                         </div>
@@ -368,7 +368,7 @@ require_once 'init.php';
                                 <li>One-Year Hosting </li>
                                  <li>Admin Tutorial </li>
                                 <li>Technical Support</li>
-                             
+
 
                             </ul>
 
@@ -395,7 +395,7 @@ require_once 'init.php';
             </div>
         </div>
 
-        <!-- 
+        <!--
         <div class="section grey-section scrollspy" id="subscribe">
             <div class="container">
                 <div class="row">
@@ -410,13 +410,13 @@ require_once 'init.php';
                 </div>
                 <div class="row">
                     <div class="col s8 offset-s2">
-                       
+
                         <div id="mc_embed_signup">
                             <form action="//pimmey.us11.list-manage.com/subscribe/post?u=4131d254e34d85ebd3ba25ad3&amp;id=302b5221bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                                 <div id="mc_embed_signup_scroll" class="input-field">
                                     <label for="mce-EMAIL">Your email</label>
                                     <input type="email" name="EMAIL" class="email" id="mce-EMAIL" required>
-                                   
+
                                     <div class="cant-touch-this">
                                         <input type="text" name="b_4131d254e34d85ebd3ba25ad3_302b5221bd" tabindex="-1" value="">
                                     </div>
@@ -428,13 +428,13 @@ require_once 'init.php';
                                 </div>
                             </form>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
         </div>
 Subscribe section -->
-        <!-- 
+        <!--
         <div class="section scrollspy" id="blog">
             <div class="container">
                 <div class="row">
@@ -596,55 +596,46 @@ Blog section -->
                     <form class="col s12 m12 l8 offset-l2" action="form.php" id="contact-form" novalidate>
                         <!-- This field helps us avoid spam bots, don't remove it -->
                         <div class="cant-touch-this">
-                            
+
                             <input type="text" name="hammertime" tabindex="-1" value="">
                         </div>
                         <!-- End of anti-spam field -->
                         <div class="row">
-                            <div class="input-field col s6">
-                                
+                            <div class="input-field col s4 m4">
+
                                 <input id="name" name="name" type="text" class="required">
                                 <label for="name">Name</label>
                             </div>
-                           <div class="input-field col s6">
+                           <div class="input-field col s4 m4">
                                 <input id="email" name="email" type="email" class="required">
                                 <label for="email">Email</label>
                             </div>
-                        
-                        
-                             <div class="input-field col s12 m6">
-                                
+
+
+                             <div class="input-field col s4 m4">
+
                                 <input id="tel" name="tel" type="text" class="required">
                                 <label for="tel">Tel</label>
                             </div>
-                        <div class="input-field col s12 m6">
-                            <select multiple id="service" name="service[]">
-                              <option value="" disabled selected>Choose your option</option>
-                              <option value="Hybrid">Hybrid Mobile App</option>
-                              <option value="Native">Native Mobile App</option>
-                              <option value="Website">Website</option>
-                              <option value="Web App">Web App / Web-based Business System</option>
-                            </select>
-                            <label>Select Service</label>
-                          </div>
-                            
-                            
-                            
-                    
+
+
+
+
+
                             <div class="input-field col s12">
                                 <textarea id="message" name="message" class="materialize-textarea required"></textarea>
                                 <label for="message">Message</label>
                             </div>
-                       
+
                         <div class="center-align">
                             <button type="submit" name="send" class="btn-large disabled">
                                 Send
                             </button>
                         </div>
-                        
-                        
-                        
-                        
+
+
+
+
                     </form>
                 </div>
             </div>
@@ -652,13 +643,13 @@ Blog section -->
                 <div class="row">
                     <div class="col s12">
                         <!-- Google map container -->
-                       
+
                     </div>
                 </div>
             </div>
             <div class="container contact-details">
                 <div class="row">
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m6 l6">
                         <h5>Payment Method</h5>
                         <div class="divider"></div>
                         <p>
@@ -666,24 +657,17 @@ Blog section -->
                             <i class="fa fa-credit-card"></i> Credit Card</a>
                         </p>
                     </div>
-                   
-                    <div class="col s12 m4 l4">
+
+                    <div class="col s12 m6 l6">
                         <h5>Reach us</h5>
                         <div class="divider"></div>
                         <p>
                              <i class="fa fa-phone"></i>  6827 9835<br>
+                               <i class="fa fa-whatsapp"></i> 6827 9835<br>
                             <i class="fa fa-envelope"></i> <a href="mailto:hi@apptisan.xyz">hi@apptisan.xyz</a>
                         </p>
                     </div>
-                    <div class="col s12 m4 l4 modern-connect">
-                        <h5>Modern connect</h5>
-                        <div class="divider"></div>
-                        <p>
-                            <!-- Add your Skype link here -->
-                            <i class="fa fa-whatsapp"></i> 6827 9835<br>
-                            <i class="fa fa-wechat"></i> 178232163
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -715,5 +699,3 @@ Blog section -->
 
 
 <?php require_once 'footer.php' ?>
-
-
