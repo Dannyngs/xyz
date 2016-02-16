@@ -64,22 +64,13 @@ require_once 'init.php';
 
                     <!-- Static menu -->
                     <ul class="right hide-on-med-and-down table-of-contents">
-                        <li><a href="#triangles">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#prices">Prices</a></li>
+                      <?php include 'nav.php';?>
 
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <!-- Mobile menu, make sure it is equal to the statis menu -->
                     <ul class="side-nav" id="mobile-menu">
-                        <li><a href="#triangles">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#prices">Prices</a></li>
-
-                        <li><a href="#contact">Contact</a></li>
+                          <?php include 'nav.php';?>
                     </ul>
                 </div>
             </nav>
@@ -118,8 +109,7 @@ require_once 'init.php';
                     <h2>We are Apptisan</h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
-                           We are a team of app & website developers with skills ranging from technologies like Angular.js based web app , Cordova based hybrid app , Joomla and WordPress CMS , iPhone , iPad and Android native apps .
-                        </p>
+<?php echo $lang['intro']   ; ?>                     </p>
                     </div>
                 </div>
 
@@ -128,29 +118,29 @@ require_once 'init.php';
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-desktop animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Web-based App</h5>
-                        <p>We combine the latest  technologies to provide our customers wide range of web applications development and maintenance services.</p>
+                        <h5><?php echo   $lang['webapp'];?></h5>
+                        <p><?php echo   $lang['webapp_desc'];?></p>
                         <a href="#contact" class="btn waves-effect waves-dark white black-text">Learn more</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-mobile animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Mobile Apps</h5>
-                        <p>Our experienced and talented team of Mobile Apps developers is always willing to work on latest mobile technologies to give you the best</p>
+                        <h5><?php echo   $lang['mobileapp'];?></h5>
+                        <p><?php echo   $lang['mobileapp_desc'];?></p>
                         <a href="#contact" class="btn waves-effect waves-dark white black-text">Discover</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-cloud animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Cloud Hosting</h5>
-                        <p>As a trusted partner of AWS Cloud based Solutions, Apptisan provides Amazon web hosting and cloud computing </p>
+                        <h5><?php echo   $lang['cloudhosting'];?></h5>
+                        <p><?php echo   $lang['cloudhosting_desc'];?></p>
                         <a href="#contact" class="btn waves-effect waves-dark white black-text">Try it</a>
                     </div>
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-code animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Website</h5>
-                        <p>Your website will be the face of your business. It will reflect the features and the nature of your business from all angles. </p>
+                        <h5><?php echo   $lang['website'];?></h5>
+                        <p><?php echo   $lang['website_desc'];?></p>
                         <a href="#contact" class="btn waves-effect waves-dark white black-text">Explore</a>
                     </div>
                 </div>
@@ -165,14 +155,15 @@ require_once 'init.php';
         <div class="section scrollspy"id="works" >
             <div class="container" >
                 <div class="row">
-                    <h2>Our works</h2>
+                    <h2><?php echo   $lang['works'];?></h2>
                     <!-- Category filter buttons -->
                     <div class="filter-options" >
 
-                        <a class="btn-flat waves-green-accent waves-effect active" id="all" data-group="all">Everything</a>
-                        <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid">Hybrid App</a>
-                        <a class="btn-flat waves-green-accent waves-effect" data-group="app">Native App</a>
-                        <a class="btn-flat waves-green-accent waves-effect" data-group="website">Website</a>
+                        <a class="btn-flat waves-green-accent waves-effect active" id="all" data-group="all"><?php echo   $lang['everything'];?></a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid"><?php echo   $lang['hybrid_mobile'];?></a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="app"><?php echo   $lang['native_mobile'];?></a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="website"><?php echo   $lang['website'];?></a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group=""><?php echo   $lang['webapp'];?></a>
                     </div>
                 </div>
             </div>
@@ -314,17 +305,16 @@ require_once 'init.php';
         <div class="section scrollspy" id="prices">
             <div class="container">
                 <div class="row">
-                    <h2>Prices</h2>
+                    <h2><?php echo $lang['price']; ?></h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
-                            Browse between native app, hybrid app and website(web app) versions.
-                            We've got your next project covered.
+                          <?php echo $lang['price_desc']; ?>
                         </p>
                     </div>
                     <div class="col s12">
                         <!-- Currency switcher radio buttons -->
                         <p class="right-align currency-switcher">
-                            Choose your currency:
+                              <?php echo $lang['currentcy']; ?>:
                             <span class="currency-group">
                                 <input name="currency" type="radio" id="hkd" checked>
                                 <label for="hkd">HKD</label>
@@ -339,31 +329,31 @@ require_once 'init.php';
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="standard">
-                            <div class="offer">NATIVE App</div>
+                            <div class="offer"><?php echo $lang['mobileapp']; ?></div>
                             <div class="divider"></div>
                             <div class="price"><span style="font-size:20px;"> From </span>$28,000</div>
                             <ul>
                                 <li>Graphic Design</li>
                                 <li>User Experience Design</li>
-                                <li>Native App Development</li>
+                                <li>Hybrid\Native App Development</li>
                                 <li>Server-side Development </li>
                                 <li>One-Year Hosting </li>
                                  <li>Admin Tutorial </li>
                                 <li>Technical Support </li>
 
                             </ul>
-                            <a href="#contact" class="waves-effect waves-dark white black-text btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-dark white black-text btn">  <?php echo $lang['quote']; ?></a>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1 best-offer" id="professional">
-                            <div class="offer best-value">HYBRID App</div>
+                            <div class="offer"><?php echo $lang['webapp']; ?></div>
                             <div class="divider"></div>
                             <div class="price"><span style="font-size:20px;"> From </span>$18,000</div>
                             <ul>
                                  <li>Graphic Design</li>
                                 <li>User Experience Design</li>
-                                <li>Hybrid App Development </li>
+                                <li>Web App Development </li>
                                 <li>Server-side Development</li>
                                 <li>One-Year Hosting </li>
                                  <li>Admin Tutorial </li>
@@ -372,12 +362,12 @@ require_once 'init.php';
 
                             </ul>
 
-                            <a href="#contact" class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-light green accent-2 indigo-text text-darken-4 btn"><?php echo $lang['quote']; ?></a>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="price-container z-depth-1" id="extended">
-                            <div class="offer">Website(web app)</div>
+                            <div class="offer"><?php echo $lang['website']; ?></div>
                             <div class="divider"></div>
                           <div class="price"><span style="font-size:20px;"> From </span>$8,000</div>
                             <ul>
@@ -388,7 +378,7 @@ require_once 'init.php';
                                 <li>Admin Tutorial</li>
                                 <li>Technical Support</li>
                             </ul>
-                            <a href="#contact" class="waves-effect waves-dark white black-text btn">Learn more</a>
+                            <a href="#contact" class="waves-effect waves-dark white black-text btn"><?php echo $lang['quote']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -578,14 +568,15 @@ Subscribe section -->
         </div>
 Blog section -->
         <!-- Contact form section -->
+
+
         <div class="section scrollspy"id="contact">
             <div class="container" >
                 <div class="row">
-                    <h2>Contact us</h2>
+                    <h2><?php echo   $lang['contact'];?></h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
-                            Let us know if you want to work on your project with us or just drop a line to say hello. We're
-                            always glad to receive your messages.
+                            <?php echo   $lang['contact_desc'];?>
                         </p>
                         <p class="right-align">
                          <!--   <i class="fa fa-info-circle"></i> Last name is not required.-->
@@ -629,7 +620,7 @@ Blog section -->
 
                         <div class="center-align">
                             <button type="submit" name="send" class="btn-large disabled">
-                                Send
+                                <?php echo   $lang['send'];?>
                             </button>
                         </div>
 
@@ -650,16 +641,16 @@ Blog section -->
             <div class="container contact-details">
                 <div class="row">
                     <div class="col s12 m6 l6">
-                        <h5>Payment Method</h5>
+                        <h5><?php echo   $lang['payment'];?></h5>
                         <div class="divider"></div>
                         <p>
                              <i class="fa fa-cc-paypal"></i>  Paypal<br>
-                            <i class="fa fa-credit-card"></i> Credit Card</a>
+                            <i class="fa fa-credit-card"></i> <?php echo   $lang['creditcard'];?></a>
                         </p>
                     </div>
 
                     <div class="col s12 m6 l6">
-                        <h5>Reach us</h5>
+                        <h5><?php echo   $lang['reachus'];?></h5>
                         <div class="divider"></div>
                         <p>
                              <i class="fa fa-phone"></i>  6827 9835<br>

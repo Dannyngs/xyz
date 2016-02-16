@@ -1,60 +1,54 @@
- 
-              <ul id="nav">
-<?php
 
-  $rs = $db->query("SELECT* FROM T_Menu where parent_id = 0");
+
+    <?php
+
+  $rs = $db->query("SELECT* FROM T_Menu where parent_id = 0  order by sort");
     $menu = $rs->fetchAll();
-                 
-                   foreach ($menu as $item){
-                      
-                   echo "<li class='down-menu'>";
 
-                       if($item['type']=="page")
-                        echo "<a href='".$item['url']."'>".$item[$current_lang.'_title']."</a>";
-                        else if($item['type']=="sub"){
-                             echo "<a href='#'>".$item[$current_lang.'_title']."</a>";
-                         $srs = $db->query("SELECT* FROM menu where parent_id =".$item['id']);
-                       if($srs){
+                   foreach ($menu as $item){
+
+                       $srs = $db->query("SELECT* FROM T_Menu where parent_id =".$item['id']." order by sort");
                        $submenu = $srs->fetchAll();
-                      
-                          echo "<ul>";
+
+                       if($submenu){
+
+
+                        echo "<li class='dropdown'>";
+                        echo "<a class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>".$item[$current_lang.'_title']."<span class='caret'></span></a>";
+                          echo "<ul class='dropdown-menu'>";
                               foreach ($submenu as $subitem){
-                          
-                                         echo "<li ><a href='".$subitem['url']."'>".$subitem[$current_lang.'_title']."</a>";
+
+                                         echo "<li class='allw' ><a  href='".$subitem['url']."'>".$subitem[$current_lang.'_title']."</a>";
 
                                 }
                             echo "</ul>";
-                           
-                       }  
-                       }
-                        else{
-                        echo "<a href='#'>".$item[$current_lang.'_title']."</a>";     
-                          $rs = $db->query("SELECT* FROM ".$item['type']);   
-                           if($rs){
-                                   $subMenu = $rs->fetchAll();
-                                    echo "<ul>";
-                                    foreach ($subMenu as $subItem){
-                          
-                                         echo "<li ><a href='".$item['url']."?id=".$subItem['id']."'>"
-                                             
-                                             .$subItem[$current_lang.'_'.$item['type']]."</a>";
 
-                                    }
-                                    echo "</ul>";
-                           } 
-                            
-                            
-                        }
-                       
-                      
-                       
-                       echo "</li>";
-                    
-                  }
- 
+                       }else{//no sub menu
+
+                        echo "<li >";
+                        echo "<a class='' href='".$item['url']."'>".$item[$current_lang.'_title']."</a>";
+
+
+                       }
+
+
+
+
+
+
+
+
+
+
+
+
+                        echo "</li>";
+
+                       }
+                       if($current_lang=='eng')
+                      echo "<li><a href='?lang=chi'>中文</a></li>";
+                      else
+                      echo "<li><a href='?lang=eng'>English</a></li>";
+
+
 ?>
-                 
-    </ul>
-            
-        
-                 
