@@ -85,7 +85,7 @@ require_once 'init.php';
                         <div class="row">
                             <div class="col s12">
                                 <!-- Your company's slogan, feel free to add more tags here -->
-                                <h1>Build apps the way an artisan does.</h1>
+                                <h1>Build apps the way an artisan does it.</h1>
                             </div>
                         </div>
                     </div>

@@ -394,8 +394,8 @@ blockquote {
           line-height: 4.7rem; } }
       @media only screen and (min-width: 993px) {
        .h1-wrapper h1 {
-          font-size: 7.0rem;
-          line-height: 7.4rem; } }
+          font-size: 9.0rem;
+          line-height: 9.0rem; } }
     .h1-wrapper i {
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
