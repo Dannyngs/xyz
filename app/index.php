@@ -163,7 +163,7 @@ require_once 'init.php';
                         <a class="btn-flat waves-green-accent waves-effect" data-group="hybrid"><?php echo   $lang['hybrid_mobile'];?></a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="app"><?php echo   $lang['native_mobile'];?></a>
                         <a class="btn-flat waves-green-accent waves-effect" data-group="website"><?php echo   $lang['website'];?></a>
-                        <a class="btn-flat waves-green-accent waves-effect" data-group=""><?php echo   $lang['webapp'];?></a>
+                        <a class="btn-flat waves-green-accent waves-effect" data-group="webapp"><?php echo   $lang['webapp'];?></a>
                     </div>
                 </div>
             </div>
