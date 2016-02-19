@@ -72,14 +72,15 @@ require_once 'init.php';
                     <ul class="side-nav" id="mobile-menu">
                           <?php include 'nav.php';?>
                     </ul>
+
                 </div>
             </nav>
         </div>
 
         <!-- Triangles section -->
         <div id="triangles" class="scrollspy">
-                 <canvas id="starfield" ></canvas>
-
+               <!--  <canvas id="starfield" ></canvas> -->
+  <div id="output">
             <div class="h1-wrapper valign-wrapper">
                     <div class="container">
                         <div class="row">
@@ -95,7 +96,8 @@ require_once 'init.php';
                     </a>
                 </div>
 
-
+            </div>
+                        
 
 
 
@@ -634,7 +636,7 @@ Blog section -->
                 <div class="row">
                     <div class="col s12">
                         <!-- Google map container -->
-
+                        <div id="map-canvas" class="map"></div>
                     </div>
                 </div>
             </div>
@@ -684,7 +686,6 @@ Blog section -->
 
     </div>
  </div>
-
     <!-- Ajax box container, waiting for its turn -->
     <div id="ajax-box" class="translate"></div>
 

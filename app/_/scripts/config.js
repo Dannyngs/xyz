@@ -6,12 +6,12 @@ var Wata = {
     triangles: {
         mesh: {
             depth: 11,
-            slices: 50
+            slices: 250
         },
         light: {
             ambient: '#5838e6',
             diffuse: '#4efa62',
-            distance: 15
+            distance: 55
         }
     },
 
@@ -27,28 +27,28 @@ var Wata = {
     currencySwitcher: {
         offers: {
             standard: {
-                hkd: '28,000',
-                rmb: '23,800'
+                usd: 19.0,
+                eur: 17.0
             },
             professional: {
-                hkd: '18,000',
-                rmb: '15,300'
+                usd: 49.0,
+                eur: 43.0
             },
             extended: {
-                hkd: '8,000',
-                rmb: '6,800'
+                usd: 99.0,
+                eur: 87.0
             }
         },
         symbols: {
-            hkd: '$',
-            rmb: '￥'
+            usd: '$',
+            eur: '€'
         }
     },
 
     // Google map position and marker name
     googleMaps: {
-        lat: 34.0549946,
-        lng: -118.2475384,
-        zoom: 16
+        lat:22.2780266,
+        lng: 114.1708843,
+        zoom: 18
     }
 };

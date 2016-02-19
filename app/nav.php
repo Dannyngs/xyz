@@ -50,5 +50,8 @@
                       else
                       echo "<li><a href='?lang=eng'>English</a></li>";
 
+   echo  "<li><a href='#contact'><i class='fa fa-whatsapp' style='font-size:1.2rem;'> 6827 9835</i></a></li>";
+
+
 
 ?>
