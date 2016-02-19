@@ -75,5 +75,6 @@
     <![endif]-->
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apptisan - <?php echo $lang['title']; ?>  </title>
 </head>
 <body  onresize="resize()" onorientationchange="resize()"  >

@@ -57,7 +57,7 @@ require_once 'init.php';
                 <div class="nav-wrapper">
 
                     <!-- Site name -->
-                    <a href="/" class="brand-logo"><span class="tighter">A </span> p p t i s a n</a>
+                    <a href="/" class="brand-logo" style="font-size:25px;    "><img id="logo" src="favicon.png" >A p p t i s a n</a>
 
                     <!-- Mobile menu button -->
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

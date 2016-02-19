@@ -6,7 +6,7 @@ Language: English
 */
 
 $lang = array();
-
+$lang['title']="App Artisan";
 $lang['intro'] = "We are a team of app & website developers with skills ranging from technologies like Angular.js based web app , Cordova based hybrid app , Joomla and WordPress CMS , iPhone , iPad and Android native apps .";
 $lang['webapp'] = 'WEB APP';
 $lang['mobileapp'] = 'MOBILE APPS';

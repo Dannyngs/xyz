@@ -6,7 +6,7 @@ Language: Chinese
 */
 
 $lang = array();
-
+$lang['title']="程式工匠";
 $lang['intro'] = "我們是Apptisan團隊，一支致力於手機或網站應用程式開發的團隊，我們熟悉各種流行前衛的技術，如：Angular.js ,Node.js , Cordova/Phonegap .我們致力爲顧客打造低成本高質量的應用程式";
 $lang['webapp'] = 'Web應用程式';
 $lang['mobileapp'] = '手機應用程式';
