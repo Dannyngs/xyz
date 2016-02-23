@@ -9,3 +9,11 @@ body{
    
 }
 
+
+@media screen and (max-width: 580px) {
+
+.marvel-device.iphone6{
+   width:auto; 
+    
+}
+}

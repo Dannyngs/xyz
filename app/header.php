@@ -42,12 +42,13 @@
     <link rel="manifest" href="favicons/manifest.json">
 
      <!-- build:css({.tmp,app}) /_/css/lib/html5bp.css -->
-     <link rel="stylesheet" href="_/styles/css/custom.css">
        <link rel="stylesheet" href="_/libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="_/libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="_/styles/css/wata.min.css">
      <link rel="stylesheet" href="_/styles/css/devices.min.css">
      <link rel="stylesheet" href="_/styles/css/browser.css">
+         <link rel="stylesheet" href="_/styles/css/custom.css">
+
 
      <!-- endbuild -->
 

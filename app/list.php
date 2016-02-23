@@ -29,7 +29,7 @@ $rs = $db->query("SELECT * FROM T_work where id =".$_GET['id']);
 
 <div class="container">
     <div class="row">
-         <h1>
+         <h1 style="margin-top:5rem;">
                <?php echo $work['title'];  ?>
             </h1>
        
